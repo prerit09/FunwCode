@@ -5,7 +5,8 @@ book=open('Book.pdf', 'rb')
 pdfReader = PyPDF2.PdfFileReader(book)
 
 pages = pdfReader.numPages
-print(pages)
+print(pages) 
+
 
 speaker = pyttsx3.init()
 
