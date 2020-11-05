@@ -26,6 +26,7 @@ def read_book(book_path, gender, words_per_minute, first_page):
     total_pages = pdfReader.numPages
     print(total_pages) 
     
+    # User input to continue reading or not
     continue_reading = "y"
     
     for num in range(first_page, total_pages):
