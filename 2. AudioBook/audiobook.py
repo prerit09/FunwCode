@@ -2,10 +2,10 @@ import pyttsx3
 import PyPDF2
 import time
 
-book_path = "Book.pdf"
+book_path = "book.pdf"
 gender = 1
 words_per_minute = 150
-first_page = 14
+first_page = 6
 
 def read_book(book_path, gender, words_per_minute, first_page):
 
@@ -35,7 +35,7 @@ def read_book(book_path, gender, words_per_minute, first_page):
             # Fetches text from the current page
             page = pdfReader.getPage(num)
             text = page.extractText()
-
+            print(text)
             # Narrates the text
             narrator.say("Reading Page Number "+ str(num))
             time.sleep(2)
